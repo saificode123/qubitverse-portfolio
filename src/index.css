@@ -4,7 +4,7 @@
 
 /* Add this to explicitly set the base font size */
 html {
-  font-size: 60%; /* Equivalent to 15px if default browser font size is 16px */
+  font-size: 70%; /* Equivalent to 15px if default browser font size is 16px */
   /* You can also use fixed pixels like: font-size: 15px; */
 }
 
