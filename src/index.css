@@ -1,6 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Add this to explicitly set the base font size */
+html {
+  font-size: 93.75%; /* Equivalent to 15px if default browser font size is 16px */
+  /* You can also use fixed pixels like: font-size: 15px; */
+}
+
 body {
   overflow-x: hidden;
   font-family: Arial, Helvetica, sans-serif;
