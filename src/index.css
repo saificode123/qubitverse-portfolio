@@ -4,10 +4,11 @@
 
 @layer base {
   html {
-    font-size: 16px;
+    font-size: 14px; /* Reduced from 16px to scale everything down */
     -webkit-text-size-adjust: 100%;
     -moz-text-size-adjust: 100%;
     text-size-adjust: 100%;
+    zoom: 0.85; /* Additional scaling for consistent sizing */
   }
   
   body {
