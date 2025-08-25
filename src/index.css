@@ -8,7 +8,7 @@
     -webkit-text-size-adjust: 100%;
     -moz-text-size-adjust: 100%;
     text-size-adjust: 100%;
-    zoom: 0.50; /* Additional scaling for consistent sizing */
+    zoom: 0.20; /* Additional scaling for consistent sizing */
   }
 
   body {
