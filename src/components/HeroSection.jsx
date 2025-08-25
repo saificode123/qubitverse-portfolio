@@ -278,7 +278,7 @@ const ExtendedPortfolio = () => {
             {/* Main Heading */}
             <motion.h1
               variants={itemVariants}
-              className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-6 leading-[1.1]"
+              className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold mb-8 leading-[0.9]"
             >
               <span className="bg-gradient-to-r from-white via-purple-200 to-green-200 bg-clip-text text-transparent">
                 Building the
@@ -298,7 +298,7 @@ const ExtendedPortfolio = () => {
           
             <motion.p
               variants={itemVariants}
-              className="text-base md:text-lg lg:text-xl text-purple-100/90 max-w-3xl mb-8 leading-relaxed" 
+              className="text-lg md:text-xl lg:text-2xl text-purple-100/90 max-w-3xl mb-12 leading-relaxed" 
             >
               I deliver robust, production-ready websites and web apps with speed and precision. Every project is backed by clean code, clear communication, and a commitment to excellence.
             </motion.p>
@@ -317,7 +317,7 @@ const ExtendedPortfolio = () => {
                 transition={{ delay: 1.5, type: 'spring', stiffness: 100 }}
                 whileHover={{ scale: 1.05, y: -2 }}
                 whileTap={{ scale: 0.95 }}
-                className="group px-6 py-3 bg-gradient-to-r from-purple-600 to-green-600 rounded-lg font-semibold text-white text-base" 
+                className="group px-8 py-4 bg-gradient-to-r from-purple-600 to-green-600 rounded-xl font-semibold text-white text-lg" 
               >
                 <span className="flex items-center gap-2">
  
@@ -396,7 +396,7 @@ const ExtendedPortfolio = () => {
             </div>
             
             {/* Section Heading */}
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
               <span className="bg-gradient-to-r from-white via-purple-200 to-green-200 bg-clip-text text-transparent">
      
                 My GitHub
@@ -409,7 +409,7 @@ const ExtendedPortfolio = () => {
             </h2>
             
             {/* Section Description */}
-            <p className="text-base text-purple-100/80 max-w-3xl mx-auto"> 
+            <p className="text-lg text-purple-100/80 max-w-3xl mx-auto"> 
               Explore my latest projects showcasing modern web technologies, 
               clean architecture, and innovative solutions.
             </p>
@@ -824,7 +824,7 @@ const ExtendedPortfolio = () => {
           animate={{ opacity: 1, scale: 1 }}
    
           exit={{ opacity: 0, scale: 0.5 }}
-          transition={{ duration: 0.3 }}
+          transition={{ duration: 0.3 }}z
           className="fixed bottom-6 right-6 z-50 p-3 bg-purple-600 text-white rounded-full shadow-lg hover:bg-purple-700 transition-colors" 
           aria-label="Back to top"
         >
