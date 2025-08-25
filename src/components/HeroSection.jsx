@@ -219,7 +219,7 @@ const ExtendedPortfolio = () => {
               opacity: [0.3, 0.6, 0.3],
             }}
             transition={{ duration: 8, repeat: Infinity }}
-            className="absolute top-20 left-20 w-96 h-96 bg-purple-500/20 rounded-full blur-3xl"
+            className="absolute top-10 left-10 xs:top-20 xs:left-20 w-48 h-48 xs:w-64 xs:h-64 sm:w-80 sm:h-80 md:w-96 md:h-96 bg-purple-500/20 rounded-full blur-3xl"
             style={{
               transform: `translate(${mousePosition.x}px, ${mousePosition.y}px)`,
             }}
@@ -233,7 +233,7 @@ const ExtendedPortfolio = () => {
             }}
         
             transition={{ duration: 10, repeat: Infinity, delay: 2 }}
-            className="absolute bottom-20 right-20 w-80 h-80 bg-green-500/20 rounded-full blur-3xl"
+            className="absolute bottom-10 right-10 xs:bottom-20 xs:right-20 w-40 h-40 xs:w-56 xs:h-56 sm:w-72 sm:h-72 md:w-80 md:h-80 bg-green-500/20 rounded-full blur-3xl"
             style={{
               transform: `translate(${-mousePosition.x}px, ${-mousePosition.y}px)`,
             }}
@@ -256,7 +256,7 @@ const ExtendedPortfolio = () => {
         {/* Hero Content */}
         <motion.div 
           style={{ y: heroY, opacity: heroOpacity }}
-          className="relative z-10 flex flex-col xl:flex-row items-center justify-between min-h-screen px-6 sm:px-10 lg:px-24 py-20"
+          className="relative z-10 flex flex-col xl:flex-row items-center justify-between min-h-screen px-4 xs:px-6 sm:px-10 lg:px-24 py-12 xs:py-16 sm:py-20"
         >
           <motion.div
             variants={containerVariants}
@@ -278,7 +278,7 @@ const ExtendedPortfolio = () => {
             {/* Main Heading */}
             <motion.h1
               variants={itemVariants}
-              className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold mb-8 leading-[0.9]"
+              className="text-3xl xs:text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold mb-6 xs:mb-8 leading-[1.1] xs:leading-[0.9]"
             >
               <span className="bg-gradient-to-r from-white via-purple-200 to-green-200 bg-clip-text text-transparent">
                 Building the
@@ -298,7 +298,7 @@ const ExtendedPortfolio = () => {
           
             <motion.p
               variants={itemVariants}
-              className="text-lg md:text-xl lg:text-2xl text-purple-100/90 max-w-3xl mb-12 leading-relaxed" 
+              className="text-sm xs:text-base md:text-lg lg:text-xl text-purple-100/90 max-w-full xs:max-w-3xl mb-6 xs:mb-12 leading-relaxed" 
             >
               I deliver robust, production-ready websites and web apps with speed and precision. Every project is backed by clean code, clear communication, and a commitment to excellence.
             </motion.p>
@@ -416,7 +416,7 @@ const ExtendedPortfolio = () => {
           </motion.div>
 
           {/* Featured Projects Grid */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4 xs:gap-6 sm:gap-8 mb-8 xs:mb-12">
             {githubProjects.filter(project => project.featured).map((project, index) => (
               <motion.div
                 key={project.id}
@@ -455,9 +455,9 @@ const ExtendedPortfolio = () => {
 
                   {/* Project Info */}
      
-                  <div className="p-6">
+                  <div className="p-4 xs:p-6">
                     <div className="flex items-center justify-between mb-3">
-                      <h3 className="text-xl font-bold text-white group-hover:text-purple-300 transition-colors"> 
+                      <h3 className="text-base xs:text-lg sm:text-xl font-bold text-white group-hover:text-purple-300 transition-colors"> 
                         {project.name}
            
                       </h3>
@@ -468,7 +468,7 @@ const ExtendedPortfolio = () => {
                       </div>
                     </div>
                     
-                    <p className="text-gray-300 mb-4 line-clamp-3">
+                    <p className="text-sm xs:text-base text-gray-300 mb-3 xs:mb-4 line-clamp-3">
                       {project.description}
    
                     </p>
@@ -526,7 +526,7 @@ const ExtendedPortfolio = () => {
 
          
           {/* Other Projects Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 xs:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4 xs:gap-6">
             {githubProjects.filter(project => !project.featured).map((project, index) => (
               <motion.div
                 key={project.id}
